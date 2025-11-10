@@ -5,8 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./style.css" />
     <title>Assignment1</title>
 </head>
@@ -96,16 +98,16 @@
                 <div class="option-group">
                     <div class="checkbox-row">
                         <div class="checkbox-item">
-                            <input type="checkbox" id="GIT" name="devops" value="GIT">
-                            <label for="reaGITct">GIT</label>
+                            <input type="checkbox" id="git" name="devops" value="git">
+                            <label for="git">GIT</label>
                         </div>
                         <div class="checkbox-item">
-                            <input type="checkbox" id="Gulp" name="devops" value="Gulp">
-                            <label for="Gulp">Gulp</label>
+                            <input type="checkbox" id="gulp" name="devops" value="gulp">
+                            <label for="gulp">Gulp</label>
                         </div>
                         <div class="checkbox-item">
-                            <input type="checkbox" id="Docker" name="devops" value="Docker">
-                            <label for="Docker">Docker</label>
+                            <input type="checkbox" id="docker" name="devops" value="docker">
+                            <label for="docker">Docker</label>
                         </div>
                     </div>
                 </div>
@@ -124,8 +126,8 @@
                             <label for="intermediate">Intermediate</label>
                         </div>
                         <div class="radio-item">
-                            <input type="radio" id="intermediate" name="devops" value="intermediate">
-                            <label for="intermediate">Advanced</label>
+                            <input type="radio" id="advanced" name="devops" value="advanced">
+                            <label for="advanced">Advanced</label>
                         </div>
                     </div>
             </fieldset>
@@ -134,8 +136,33 @@
                 <div class="option-group">
                     <label for="other">How did you hear about us?</label>
                     <select name="other" id="other">
-                        <option value=""></option>
+                        <option value="">Please Select...</option>
+                        <optgroup label="Person">
+                            <option value="friend">Friend</option>
+                            <option value="family">Family</option>
+                            <option value="colleague">Colleague</option>
+                        </optgroup>
+
+                        <optgroup label="Media">
+                            <option value="iterner">Internet</option>
+                            <option value="radio">Radio</option>
+                            <option value="tv">TV</option>
+                            <option value="newspaper">Newspaper</option>
+                        </optgroup>
+
+                        <optgroup label="Other">
+                            <option value="magic">Magic!</option>
+                            <option value="other">Other...</option>
+                        </optgroup>
                     </select>
+                </div>
+                <div class="option-group hidden" id="hidden-details">
+                  <label for="other-details">Details, please....</label>
+                  <input type="text" id="other-details" name="other-details" placeholder="Do tell!">
+                </div>
+                <div class="option-group">
+                    <label for="comment" >Comment</label>
+                    <textarea name="comment" id="comment"></textarea>
                 </div>
             </fieldset>
         </form>
@@ -143,6 +170,19 @@
     <footer>
         <p>&copy; Aman SSD 2025</p>
     </footer>
+   <script>
+        const select = document.getElementById('other');
+        const hiddenDetails = document.getElementById('hidden-details');
+
+        select.addEventListener('change',function(){
+            if(this.value == 'magic'|| this.value == 'other'){
+              hiddenDetails.classList.remove('hidden');
+            }
+            else{
+                hiddenDetails.classList.add('hidden');
+            }
+        })
+    </script>
 </body>
 
 </html>

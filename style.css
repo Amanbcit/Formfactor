@@ -18,9 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(0deg,
-      rgba(237, 70, 24, 1) 0%,
-      rgba(245, 230, 193, 1) 100%);
+  background: linear-gradient(0deg, rgba(247, 66, 43, 1) 0%, rgba(250, 189, 151, 1) 100%);
   font-family: var(--font-family);
   overflow-x: hidden;
 }
@@ -53,6 +51,7 @@ legend {
 h1 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.485);
   color: var(--primary-color);
+  margin-top: 0;
 }
 
 h1::after {
@@ -114,6 +113,12 @@ textarea {
   margin: 0.2rem 0 0.2rem 0;
 }
 
+textarea {
+  min-width: 27rem;
+  min-height: 10rem;
+  max-height: 20rem;
+}
+
 .password-hint p {
   padding-left: 0.5rem;
   font-size: 0.8rem;
@@ -157,6 +162,14 @@ textarea {
   user-select: none;
   font-size: 0.9rem;
   font-weight: normal;
+}
+
+.hidden {
+  visibility: none;
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
 }
 
 footer {
