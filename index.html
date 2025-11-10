@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+    <title>Assignment1</title>
+</head>
+
+<body>
+    <main>
+        <form action="submit" method="post" name="input-form">
+            <h1>Signup</h1>
+            <fieldset>
+                <legend><span>1</span> Account Info</legend>
+                <label for="fullname" class="visually-hidden">Full Name</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Full name..." required
+                    aria-required="true">
+
+
+                <label for="email" class="visually-hidden">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Email Address..." required
+                    aria-required="true">
+                </div>
+
+                <label for="password" class="visually-hidden">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password..." required
+                    aria-required="true" aria-describedby="password-requirements" minlength="12"
+                    pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{12,}$">
+                <div class="password-hint">
+                    <p>Minimum 12 Charaters.</p>
+                    <p>Must include uppercase, lowercase, number and symbol.</p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><span>2</span> Dev Skills</legend>
+                <div class="sub-headings" aria-label="sub-headings">
+                    <strong>Core Languages</strong><br>
+                </div>
+                <div class="option-group">
+                    <div class="checkbox-row">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="html" name="languages" value="html">
+                            <label for="html">HTML</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="css" name="languages" value="css">
+                            <label for="css">CSS</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="javascript" name="languages" value="javascript">
+                            <label for="javascript">JavaScript</label>
+                        </div>
+                    </div>
+                    <div class="checkbox-row">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="php" name="languages" value="php">
+                            <label for="php">PHP</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="csharp" name="languages" value="csharp">
+                            <label for="csharp">C#</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="kotlin" name="languages" value="kotlin">
+                            <label for="kotlin">Kotlin</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-headings" aria-label="sub-headings">
+                    <strong>Libraries / Frameworks</strong><br>
+                </div>
+                <div class="option-group">
+                    <div class="checkbox-row">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="react" name="frameworks" value="React">
+                            <label for="react">React</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="angular" name="frameworks" value="angular">
+                            <label for="angular">Angular</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="vue" name="frameworks" value="vue">
+                            <label for="vue">Vue.js</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-headings" aria-label="sub-headings">
+                    <strong>Dev Ops</strong><br>
+                </div>
+                <div class="option-group">
+                    <div class="checkbox-row">
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="GIT" name="devops" value="GIT">
+                            <label for="reaGITct">GIT</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="Gulp" name="devops" value="Gulp">
+                            <label for="Gulp">Gulp</label>
+                        </div>
+                        <div class="checkbox-item">
+                            <input type="checkbox" id="Docker" name="devops" value="Docker">
+                            <label for="Docker">Docker</label>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend><span>3</span> Experience</legend>
+                <div class="option-group">
+                    <div class="checkbox-row">
+                        <div class="radio-item">
+                            <input type="radio" id="beginner" name="devops" value="beginner">
+                            <label for="beginner">Beginner</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="intermediate" name="devops" value="intermediate">
+                            <label for="intermediate">Intermediate</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="intermediate" name="devops" value="intermediate">
+                            <label for="intermediate">Advanced</label>
+                        </div>
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend><span>4</span> Other</legend>
+                <div class="option-group">
+                    <label for="other">How did you hear about us?</label>
+                    <select name="other" id="other">
+                        <option value=""></option>
+                    </select>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; Aman SSD 2025</p>
+    </footer>
+</body>
+
+</html>
