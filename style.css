@@ -18,8 +18,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(0deg, rgba(247, 66, 43, 1) 0%, rgba(250, 189, 151, 1) 100%);
-  font-family: var(--font-family);
+background: linear-gradient(0deg,rgba(247, 66, 43, 1) 9%, rgba(250, 189, 151, 1) 100%);  font-family: var(--font-family);
   overflow-x: hidden;
 }
 
@@ -30,7 +29,7 @@ main {
   padding: 2rem;
   max-width: 500px;
   width: 100%;
-  box-shadow: 4px 7px 17px 4px;
+  box-shadow: 10px 12px 20px 0px;;
 
 
 }
@@ -49,7 +48,7 @@ legend {
 }
 
 h1 {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.485);
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.485);
   color: var(--primary-color);
   margin-top: 0;
 }
@@ -63,7 +62,7 @@ h1::after {
   width: 5.8rem;
   height: 2px;
   background: var(--primary-color);
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.3);
 }
 
 legend {
@@ -165,13 +164,36 @@ textarea {
 }
 
 .hidden {
-  visibility: none;
+  visibility: hidden;
   opacity: 0;
   pointer-events: none;
   height: 0;
   overflow: hidden;
 }
 
+.submitBtn{
+  min-width:27rem;  
+  height: 4rem ;
+  color: white;
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-family: var(--font-family);
+  margin-top: 0.5rem;
+  border: none;
+
+}
+.reset{
+  min-width:27rem;  
+  height: 4rem ;
+  color:red;
+  background-color: white;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-family: var(--font-family);
+  margin-top: 2rem;
+  border: 1px solid grey;
+}
 footer {
   width: 100%;
   text-align: right;

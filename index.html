@@ -2,36 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Roboto+Slab:wght@100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css">
     <title>Assignment1</title>
 </head>
 
 <body>
     <main>
-        <form action="submit" method="post" name="input-form">
+        <form action="submit" method="post" name="input-form" id="input-form">
             <h1>Signup</h1>
             <fieldset>
                 <legend><span>1</span> Account Info</legend>
                 <label for="fullname" class="visually-hidden">Full Name</label>
                 <input type="text" id="fullname" name="fullname" placeholder="Full name..." required
                     aria-required="true">
-
-
                 <label for="email" class="visually-hidden">Email Address</label>
                 <input type="email" id="email" name="email" placeholder="Email Address..." required
                     aria-required="true">
-                </div>
-
                 <label for="password" class="visually-hidden">Password</label>
                 <input type="password" id="password" name="password" placeholder="Password..." required
-                    aria-required="true" aria-describedby="password-requirements" minlength="12"
+                    aria-required="true" minlength="12"
                     pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{12,}$">
                 <div class="password-hint">
                     <p>Minimum 12 Charaters.</p>
@@ -40,7 +36,7 @@
             </fieldset>
             <fieldset>
                 <legend><span>2</span> Dev Skills</legend>
-                <div class="sub-headings" aria-label="sub-headings">
+                <div class="sub-headings">
                     <strong>Core Languages</strong><br>
                 </div>
                 <div class="option-group">
@@ -73,7 +69,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="sub-headings" aria-label="sub-headings">
+                <div class="sub-headings">
                     <strong>Libraries / Frameworks</strong><br>
                 </div>
                 <div class="option-group">
@@ -92,7 +88,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="sub-headings" aria-label="sub-headings">
+                <div class="sub-headings">
                     <strong>Dev Ops</strong><br>
                 </div>
                 <div class="option-group">
@@ -110,7 +106,6 @@
                             <label for="docker">Docker</label>
                         </div>
                     </div>
-                </div>
                 </div>
             </fieldset>
             <fieldset>
@@ -130,10 +125,10 @@
                             <label for="advanced">Advanced</label>
                         </div>
                     </div>
+                </div>
             </fieldset>
             <fieldset>
                 <legend><span>4</span> Other</legend>
-                <div class="option-group">
                     <label for="other">How did you hear about us?</label>
                     <select name="other" id="other">
                         <option value="">Please Select...</option>
@@ -155,16 +150,17 @@
                             <option value="other">Other...</option>
                         </optgroup>
                     </select>
-                </div>
-                <div class="option-group hidden" id="hidden-details">
+
+                <div class="hidden" id="hidden-details">
                   <label for="other-details">Details, please....</label>
                   <input type="text" id="other-details" name="other-details" placeholder="Do tell!">
                 </div>
-                <div class="option-group">
                     <label for="comment" >Comment</label>
                     <textarea name="comment" id="comment"></textarea>
-                </div>
+                <input type="submit" value="Submit" class="submitBtn">
+                <input type="reset" value="Clear Form" class="reset" id="reset">
             </fieldset>
+            
         </form>
     </main>
     <footer>
@@ -173,6 +169,7 @@
    <script>
         const select = document.getElementById('other');
         const hiddenDetails = document.getElementById('hidden-details');
+        const form = document.getElementById('input-form');
 
         select.addEventListener('change',function(){
             if(this.value == 'magic'|| this.value == 'other'){
@@ -182,7 +179,9 @@
                 hiddenDetails.classList.add('hidden');
             }
         })
+        form.addEventListener('reset',function(){
+            setTimeout(()=> hiddenDetails.classList.add('hidden'),0);
+        })
     </script>
 </body>
-
 </html>
