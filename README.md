@@ -8,9 +8,63 @@ https://github.com/Amanbcit/Formfactor.git
 
 A responsive developer signup form featuring glass-morphism design set against an immersive night sky with a realistic moon and starfield.
 
-## Description
+## Project Overview
 
-Multi-step signup form collecting account information, technical skills (languages, frameworks, DevOps tools), experience level, and additional details. Features dynamic interactions, conditional field visibility, and comprehensive validation.
+This project is a multi-step signup form designed for developer onboarding. It collects:
+- **Account Information:** Full name, email, password with validation
+- **Developer Skills:** Core languages (HTML, CSS, JavaScript, PHP, C#, Kotlin)
+- **Frameworks/Libraries:** React, Angular, Vue.js
+- **DevOps Tools:** Git, Gulp, Docker
+- **Experience Level:** Beginner, Intermediate, or Advanced
+- **Additional Information:** How they heard about us, comments
+
+### Features
+- Dynamic form validation (password requires 12+ characters with uppercase, lowercase, number, and symbol)
+- Conditional field display (details field appears when "Magic" or "Other" is selected)
+- Glass-morphism UI design
+- Fully responsive layout
+- Accessible form controls with proper labels and ARIA attributes
+
+## Screenshots
+
+### Sunset View
+![Sunset Screenshot](./Formfactor/screenshots/night.png)
+- Warm gradient tones
+- Soft borders & highlights
+- Focus on visual warmth and readability
+
+### Night View
+![Sunset Screenshot](./Formfactor/screenshots/night.png)
+- Dark background
+- High-contrast text
+- Soft accent colors
+
+
+## How to Run Locally
+
+### Option 1: Direct File Opening
+1. Clone or download this repository
+2. Navigate to the project folder
+3. Open `index.html` directly in your web browser
+
+### Option 2: Using a Local Server (Recommended)
+```bash
+# Using Python 3
+python -m http.server 8000
+
+# Using Node.js (http-server)
+npx http-server
+
+# Using PHP
+php -S localhost:8000
+```
+
+Then open your browser and navigate to `http://localhost:8000`
+
+### Option 3: Using VS Code Live Server
+1. Install the "Live Server" extension in VS Code
+2. Right-click on `index.html`
+3. Select "Open with Live Server"
 
 ## Theme Notes
 

@@ -1,0 +1,14 @@
+----------
+LLMs Used:
+----------
+Claude.ai
+ChatGPT
+
+--------------
+Usage Summary:
+--------------
+Claude.ai
+Used mainly for design tweaks in the theme/night branch. Helpful with gradients, pseudo-elements, and improving accessibility while keeping the visual appeal. Collaboration involved sharing design goals and iterating quickly.
+
+ChatGPT
+Used to understand Git commands, branching, commits, flags (-m, -vv, -rm, etc.), and general terminal navigation. Great for clarifying commands and speeding up workflow.
