@@ -1,3 +1,9 @@
+# Author name
+Amandeep Singh
+
+# GitHub url
+https://github.com/Amanbcit/Formfactor.git
+
 # Signup Form with Night Scene Background
 
 A responsive developer signup form featuring glass-morphism design set against an immersive night sky with a realistic moon and starfield.
