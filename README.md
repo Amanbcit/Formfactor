@@ -28,13 +28,13 @@ This project is a multi-step signup form designed for developer onboarding. It c
 ## Screenshots
 
 ### Sunset View
-![Sunset Screenshot](./Formfactor/screenshots/night.png)
+![Sunset Screenshot](./screenshots/sunset.png)
 - Warm gradient tones
 - Soft borders & highlights
 - Focus on visual warmth and readability
 
 ### Night View
-![Sunset Screenshot](./Formfactor/screenshots/night.png)
+![Sunset Screenshot](./screenshots/night.png)
 - Dark background
 - High-contrast text
 - Soft accent colors
